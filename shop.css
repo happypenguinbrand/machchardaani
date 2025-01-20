@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #1e90ff;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Description Section */
+.description {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.description h1 {
+    font-size: 2rem;
+}
+
+.description p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buy Section */
+.buy-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buy-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    color: #1e90ff;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1aa851;
+}
+
+/* Product Images Section */
+.product-images {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-images h2 {
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Happy Note Section */
+.happy-note {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.happy-note h2 {
+    font-size: 1.8rem;
+}
+
+.happy-note p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
