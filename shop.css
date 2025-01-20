@@ -50,34 +50,34 @@ header a {
 
 /* Why Choose Section */
 .why-choose {
-    background-color: #f9f9f9;
+    background-color: #1e90ff; /* Blue color like homepage */
     padding: 50px 0;
+    color: white;
 }
 
 .why-choose h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #6ab04c;
 }
 
 .why-choose p {
     font-size: 1.2rem;
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 /* Buy From Here Section */
 .buy-from-here {
-    background-color: #fff;
+    background-color: #4CAF50; /* Green color like homepage */
     padding: 50px 0;
+    color: white;
 }
 
 .buy-from-here h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #6ab04c;
 }
 
 .product-category {
@@ -88,7 +88,6 @@ header a {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .product-row {
@@ -112,25 +111,25 @@ header a {
 .product-name {
     margin-top: 10px;
     font-size: 1.2rem;
-    color: #333;
+    color: white;
 }
 
 .product-size {
     font-size: 1rem;
-    color: #777;
+    color: #e0e0e0;
 }
 
 /* Our Products Section */
 .our-products {
-    background-color: #f9f9f9;
+    background-color: #ff9f43; /* Orange color like homepage */
     padding: 50px 0;
+    color: white;
 }
 
 .our-products h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #6ab04c;
 }
 
 .products-gallery {
@@ -141,8 +140,9 @@ header a {
 }
 
 .product {
-    width: 30%;
+    width: 45%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .product img {
@@ -153,7 +153,7 @@ header a {
 
 /* Happy Penguin Section */
 .happy-penguin {
-    background-color: #ff9f43;
+    background-color: #ff6347; /* Tomato red color for vibrancy */
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -162,14 +162,12 @@ header a {
 .happy-penguin h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: white;
 }
 
 .happy-penguin p {
     font-size: 1.2rem;
     color: white;
 }
-
 /* Footer Styles */
 footer {
     background-color: #1e90ff;
