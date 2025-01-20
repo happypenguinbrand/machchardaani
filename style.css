@@ -275,7 +275,7 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Services */
+/* Services Section */
 .services {
     background-color: #e0f2f1; /* Light blue background color */
     padding: 60px 0;
@@ -288,12 +288,22 @@ main {
     color: #1565c0; /* Dark blue color for headings */
 }
 
-.service-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.services p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
 }
 
+/* Grid for service items */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+}
+
+/* Service Box Styling */
 .service-item {
     background-color: #fff;
     padding: 30px;
@@ -317,6 +327,20 @@ main {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-list {
+        grid-template-columns: 1fr; /* One column on mobile screens */
+    }
+}
+
 
 /* Articles */
 .articles {
