@@ -213,7 +213,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* Focus Results */
+/* Focus Results Section */
 .focus-results {
     background-color: #6ab04c;
     color: #fff;
@@ -226,37 +226,25 @@ main {
     margin-bottom: 20px;
 }
 
-.focus-results .proposal-link {
+/* Styling for Order Buttons */
+.order-button {
     display: inline-block;
-    background-color: #fff;
-    color: #6ab04c;
+    margin: 10px 0; /* Adds spacing between buttons */
     padding: 15px 30px;
-    font-size: 1.2rem;
+    background-color: #4A90E2;
+    color: white;
     text-decoration: none;
+    font-size: 1.2rem;
     border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width to prevent it from stretching too much */
 }
 
-.focus-results .proposal-link:hover {
-    background-color: #f2f2f2;
-    color: #333;
-}
-.order-button, .call-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #4A90E2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.order-button:hover, .call-button:hover {
-  background-color: #3b78c0;
+.order-button:hover {
+    background-color: #3b78c0; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Photo Gallery Section */
