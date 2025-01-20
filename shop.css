@@ -66,96 +66,104 @@ header a {
     color: #555;
 }
 
-/* Buy Section */
-.buy-section {
-    background-color: #e6f7ff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Shop Now Section */
+.shop-now {
+    background-color: #6ab04c;
+    color: white;
+    padding: 60px 0;
 }
 
-.buy-section h2 {
-    font-size: 1.8rem;
+.shop-now h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Product Categories */
+.product-category {
+    margin-bottom: 40px;
+}
+
+.product-category h3 {
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.category {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.category h3 {
-    font-size: 1.5rem;
-    color: #1e90ff;
-}
-
-.category p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.whatsapp-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #25d366;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-    background-color: #1aa851;
-}
-
-/* Product Images Section */
-.product-images {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product-images h2 {
-    margin-bottom: 20px;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.image-grid img {
+.product-item {
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Happy Note Section */
-.happy-note {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.product-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
-.happy-note h2 {
-    font-size: 1.8rem;
-}
-
-.happy-note p {
+.product-size {
     font-size: 1rem;
-    color: #555;
+    color: #ddd;
+}
+
+/* Our Products Section */
+.our-products {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.our-products h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 30%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Happy Penguin Section */
+.happy-penguin {
+    background-color: #ff9f43;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.happy-penguin h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.happy-penguin p {
+    font-size: 1.2rem;
 }
 
 /* Footer Styles */
