@@ -34,6 +34,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    position: relative; /* Added relative positioning for the mosquito animation */
 }
 
 .logo img {
@@ -51,24 +52,26 @@ header {
     text-decoration: none;
 }
 .mosquito-graphic {
-  width: 80px;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
-/* Mosquito Animation */
-@keyframes fly {
-  transform: translateY(0);
+    width: 80px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    animation: fly 2s infinite ease-in-out; /* Apply animation here */
 }
 
+/* Mosquito Animation */
 @keyframes fly {
-  from {
-    transform: translateY(-10px);
-  }
-  to {
-    transform: translateY(10px);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move back down */
+    }
 }
+
 nav {
     margin-top: 1rem;
 }
