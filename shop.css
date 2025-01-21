@@ -1,7 +1,7 @@
 /* Header Styles */
 header {
-    background-color: #263238 (Charcoal gray)
-    color: #FFFFFF (White)
+    background-color: #263238; /* Charcoal gray */
+    color: #FFFFFF; /* White text color */
     padding: 1rem 0;
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 .company-name a {
-    color: #FFC107 (Yellow-orange for contrast)
+    color: #FFC107; /* Yellow-orange accent color for company name */
     text-decoration: none;
 }
 
@@ -42,14 +42,14 @@ nav .text-on-bar {
 }
 
 nav a {
-    color: #FFFFFF (White)
+    color: #FFFFFF; /* White text for links */
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
 }
 
 nav a:hover {
-    color: #FFC107 (Yellow-orange for contrast)
+    color: #FFC107; /* Yellow-orange accent on hover */
 }
 
 
