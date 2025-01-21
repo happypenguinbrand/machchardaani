@@ -49,80 +49,33 @@ header a {
 }
 
 /* Section 1: Why Choose Section */
-main {
-    padding: 20px 0;
-}
-.rent-website {
-    background: url('background.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
-    /* background-color:#c8e6c9; /* Light green background color */
-    /* padding: 50px 0;*/
-    text-align: center;
-}
-
-.rent-website h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.rent-website p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.rent-website .learn-more {
-    display: inline-block;
-    padding: 10px 20px;
+.why-choose {
+    background-color: #1e90ff; /* Blue color like homepage */
+    padding: 50px 0;
     color: white;
-    background-color: #6ab04c;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.hero {
-    background-color: #e0f2f1;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    color: #1565c0; /* Dark blue color for headings */
-    font-size: 3rem;
+.why-choose h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.hero p {
-    color: #00796b; /* Dark teal */
+.why-choose p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    text-align: center;
+    color: white;
 }
 
 /* Section 2: Buy From Here Section */
 .buy-from-here {
-    background-color: #4CAF50; /* Green color like homepage */
+    background-color: #4CAF50; /* Green color */
     padding: 50px 0;
     color: white;
 }
 
 .buy-from-here h2 {
     font-size: 2.5rem;
-    text-align: center;
     margin-bottom: 30px;
-}
-
-.product-category {
-    margin-bottom: 40px;
-}
-
-.product-category h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .product-row {
@@ -133,7 +86,7 @@ main {
 }
 
 .product-item {
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
@@ -143,27 +96,36 @@ main {
     border-radius: 8px;
 }
 
-.product-name {
+.product-item h3 {
     margin-top: 10px;
     font-size: 1.2rem;
     color: white;
 }
 
-.product-size {
+.product-item p {
     font-size: 1rem;
     color: #e0e0e0;
 }
 
+.product-item .btn {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 /* Section 3: Our Products Section */
 .our-products {
-    background-color: #ff9f43; /* Orange color like homepage */
+    background-color: #1e90ff; /* Blue color */
     padding: 50px 0;
     color: white;
 }
 
 .our-products h2 {
     font-size: 2.5rem;
-    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -188,7 +150,7 @@ main {
 
 /* Section 4: Happy Penguin Section */
 .happy-penguin {
-    background-color: #ff6347; /* Tomato red color for vibrancy */
+    background-color: #4CAF50; /* Green color */
     color: white;
     padding: 50px 0;
     text-align: center;
