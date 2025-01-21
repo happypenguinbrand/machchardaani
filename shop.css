@@ -12,12 +12,6 @@ body {
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header Styles */
 header {
     background-color: #333;
@@ -34,7 +28,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    position: relative; /* Added relative positioning for the mosquito animation */
 }
 
 .logo img {
@@ -50,26 +43,6 @@ header {
 .company-name a {
     color: lightgreen;
     text-decoration: none;
-}
-.mosquito-graphic {
-    width: 80px;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    animation: fly 2s infinite ease-in-out; /* Apply animation here */
-}
-
-/* Mosquito Animation */
-@keyframes fly {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Move up */
-    }
-    100% {
-        transform: translateY(0); /* Move back down */
-    }
 }
 
 nav {
@@ -88,39 +61,10 @@ nav a {
     margin: 0 1rem;
     font-size: 1rem;
 }
-/* Social Icons */
-.social-icons {
-    position: fixed;
-    top: 90px; /* Adjust as needed to be just below the navigation bar */
-    left: 0;
-    transform: translateY(0);
-    z-index: 100; /* Ensure above other content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(144, 238, 144, 0.9); /* Light green background with 90% opacity */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.social-icons a {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.1); /* Scale on hover */
-}
 
 /* Section 1: Why Choose Section */
 .why-choose {
-    background-color: #1e90ff; /* Blue color like homepage */
+    background-color: #1e90ff; /* Blue color */
     padding: 50px 0;
     color: white;
 }
@@ -128,12 +72,12 @@ nav a {
 .why-choose h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .why-choose p {
     font-size: 1.2rem;
     text-align: center;
-    color: white;
 }
 
 /* Section 2: Buy From Here Section */
@@ -146,6 +90,7 @@ nav a {
 .buy-from-here h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .product-row {
@@ -197,6 +142,7 @@ nav a {
 .our-products h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .products-gallery {
@@ -233,10 +179,9 @@ nav a {
 
 .happy-penguin p {
     font-size: 1.2rem;
-    color: white;
 }
 
-/* Footer */
+/* Footer (Same as Homepage) */
 footer {
     background-color: #333;
     color: #fff;
