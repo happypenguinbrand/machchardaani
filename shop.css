@@ -1,11 +1,28 @@
-/* General Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
+    background-color: #f2f2f2;
     color: #333;
-    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 .container {
@@ -14,38 +31,91 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    color: #1e90ff;
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added relative positioning for the mosquito animation */
 }
 
-p {
-    margin: 10px 0;
-    line-height: 1.5;
-    text-align: justify;
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
 }
 
-/* Header Styles */
-header {
-    background-color: #1e90ff;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
+.company-name {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.social-icons {
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
+}
+.mosquito-graphic {
+    width: 80px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    animation: fly 2s infinite ease-in-out; /* Apply animation here */
+}
+
+/* Mosquito Animation */
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move back down */
+    }
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav .text-on-bar {
     display: flex;
-    justify-content: center;
-    margin: 15px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+/* Social Icons */
+.social-icons {
+    position: fixed;
+    top: 90px; /* Adjust as needed to be just below the navigation bar */
+    left: 0;
+    transform: translateY(0);
+    z-index: 100; /* Ensure above other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(144, 238, 144, 0.9); /* Light green background with 90% opacity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons a {
-    margin: 0 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale on hover */
 }
 
 /* Section 1: Why Choose Section */
@@ -166,16 +236,25 @@ header a {
     color: white;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #1e90ff;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 footer a {
-    color: #fff;
+    color: #6ab04c; /* Light green color for links */
     text-decoration: none;
-    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
 }
