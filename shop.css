@@ -1,21 +1,7 @@
-/* Reset and General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background-color: #F9A825;
-    color: #F9A825;
-}
-
 /* Header Styles */
 header {
-    background-color: #F9A825;
-    color: #fff;
+    background-color: #FFF5E1; /* Soft beige/off-white */
+    color: #333333; /* Dark gray text color */
     padding: 1rem 0;
 }
 
@@ -41,7 +27,7 @@ header {
 }
 
 .company-name a {
-    color: lightgreen;
+    color: #F9A825; /* Matching bright orange from the logo */
     text-decoration: none;
 }
 
@@ -56,11 +42,16 @@ nav .text-on-bar {
 }
 
 nav a {
-    color: #fff;
+    color: #333333; /* Dark gray text for links */
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
 }
+
+nav a:hover {
+    color: #F9A825; /* Highlight link color with bright orange */
+}
+
 
 /* Section 1: Why Choose Section */
 .why-choose {
