@@ -1,40 +1,29 @@
-/* Reset and General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Light grey background color */
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    overflow: hidden;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .logo {
     display: flex;
     align-items: center;
-    position: relative; /* Added relative positioning for the mosquito animation */
 }
 
 .logo img {
@@ -50,26 +39,6 @@ header {
 .company-name a {
     color: lightgreen;
     text-decoration: none;
-}
-.mosquito-graphic {
-    width: 80px;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    animation: fly 2s infinite ease-in-out; /* Apply animation here */
-}
-
-/* Mosquito Animation */
-@keyframes fly {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Move up */
-    }
-    100% {
-        transform: translateY(0); /* Move back down */
-    }
 }
 
 nav {
@@ -87,35 +56,6 @@ nav a {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
-}
-/* Social Icons */
-.social-icons {
-    position: fixed;
-    top: 90px; /* Adjust as needed to be just below the navigation bar */
-    left: 0;
-    transform: translateY(0);
-    z-index: 100; /* Ensure above other content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(144, 238, 144, 0.9); /* Light green background with 90% opacity */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.social-icons a {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.1); /* Scale on hover */
 }
 
 /* Section 1: Why Choose Section */
@@ -241,21 +181,48 @@ nav a {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
-}
-
-footer p {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 footer a {
-    color: #6ab04c; /* Light green color for links */
+    color: #6ab04c;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #fff;
+}
+
+footer .footer-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .logo {
+        margin-right: 10px;
+    }
+
+    nav .text-on-bar {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav .text-on-bar a {
+        display: block;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
 }
